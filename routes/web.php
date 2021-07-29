@@ -14,9 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', function () {
-//    return view('layout/index');
-//});
 
 Route::get('/', [PostController::class, 'listCat']);
 Route::get('/post/listCategory', [PostController::class, 'listCat'])->name('post.listCat');
